@@ -459,7 +459,7 @@ header {
 /* __________ Clean Code __________ */
 .cleancode_block {
 	padding:96px 0 78px;
-	background-image:url(../images/clean_code_bg.jpg);
+	background-image:url(../images/services.jpg);
 	background-size:cover;
 	background-position:0 0;
 	background-attachment:fixed !important;
@@ -475,7 +475,7 @@ header {
 	font-weight:100;
 	line-height:80px;
 	font-size:80px;
-	color:#fff;
+	color:#000;
 }
 .cleancode_block p.title b {font-weight:500;}
 
@@ -483,7 +483,7 @@ header {
 	font-weight:300;
 	line-height:34px;
 	font-size:26px;
-	color:#999;
+	color:#111;
 }
 .cleancode_block .tab-pane {
 	display:block;
@@ -577,13 +577,15 @@ header {
 	line-height:20px;
 	font-size:20px;
 	color:#333;
-	opacity:0;
+/*	opacity:0;*/
+/*
 	transform:translateY(-30px);
 	-o-transform:translateY(-30px);
 	-ms-transform:translateY(-30px);
 	-webkit-transform:translateY(-30px);
 	transition: all 0.5s ease-in-out; 
 	-webkit-transition: all 0.5s ease-in-out;
+*/
 }
 .nav-tabs li.active a span {
 	opacity:1;

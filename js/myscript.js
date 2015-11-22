@@ -104,9 +104,19 @@ jQuery(window).load(function(){
 		animationLoop: false,
 		slideshow: false,
 		prevText: "",
-		nextText: ""
+		nextText: "",
+		sync: "#carousel"
 	});
-	
+	$('#carousel').flexslider({
+		animation: "fade",
+		controlNav: false,
+		animationLoop: false,
+		directionNav: false,
+		slideshow: false,
+		itemWidth: 100,
+		itemMargin: 5,
+		asNavFor: '.top_slider'
+	});
 	
 	homeHeight();
 	

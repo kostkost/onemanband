@@ -41,7 +41,7 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {overflow:hidden; position: relative; z-index:2;}
-.flexslider.top_slider {min-height:564px; background-color:#333;}
+.flexslider.top_slider {min-height:564px; background-color:#ccc;}
 .flexslider.top_slider:before {
 	content:'';
 	position:absolute;
@@ -312,9 +312,13 @@ html[xmlns] .slides {display: block;}
 /* Caption */
 .top_slider .slide1 {
 	height:100%;
+	background-image:url(../images/home.jpg);
+	background-size:cover;
+	background-attachment:fixed !important;
 }
 
 .top_slider .slide1 .flex_caption1 {
+/*    background: rgba(255,255,255,0.7);*/
 	position:absolute;
 	z-index:30;
 	left:50%;
@@ -330,12 +334,15 @@ html[xmlns] .slides {display: block;}
 .top_slider .slide1 .flex_caption1 .title1 {margin-bottom:15px; display:inline-block; font-weight:500; line-height:80px; font-size:80px;}
 .top_slider .slide1 .flex_caption1 .title2 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
 .top_slider .slide1 .flex_caption1 .title3 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
-.top_slider .slide1 .flex_caption1 .title4 {margin-bottom:15px; width:680px; font-weight:300; line-height:34px; font-size:26px;}
+.top_slider .slide1 .flex_caption1 .title4 {margin-bottom:15px; width:800px; font-weight:300; line-height:34px; font-size:26px;}
 
 
 
 .top_slider .slide2 {
 	height:100%;
+	background-image:url(../images/home2.jpg);
+	background-size:cover;
+	background-attachment:fixed !important;
 }
 
 .top_slider .slide2 .flex_caption1 {
@@ -354,14 +361,12 @@ html[xmlns] .slides {display: block;}
 .top_slider .slide2 .flex_caption1 .title1 {margin-bottom:15px; display:inline-block; font-weight:500; line-height:80px; font-size:80px;}
 .top_slider .slide2 .flex_caption1 .title2 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
 .top_slider .slide2 .flex_caption1 .title3 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;}
-.top_slider .slide2 .flex_caption1 .title4 {margin-bottom:15px; width:680px; font-weight:300; line-height:34px; font-size:26px;}
+.top_slider .slide2 .flex_caption1 .title4 {margin-bottom:15px; width:720px; font-weight:300; line-height:34px; font-size:26px;}
 
 
-.top_slider .slide1.bg,
-.top_slider .slide2.bg,
-.top_slider .slide3.bg {
+.top_slider .slide3 {
 	height:100%;
-	background-image:url(../images/slider/slide3_bg.jpg);
+	background-image:url(../images/home3.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
 }
