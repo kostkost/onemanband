@@ -1,10 +1,12 @@
-/* #ffd800 */
+/* #ffd800 */ 
+/* #FF4C40 */
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-section {
-    margin: 3em auto; 
+.margin3 {
+    margin-top: 3em; 
 }
 
 
@@ -33,22 +35,39 @@ section {
     width: 70%;
     color: #fff;
 }
-.hero .item h4 {
+.hero h4 {
     text-align: justify;
     background-color: rgba(0,0,0,0.6);
 }
-.red {
+.hero h1 {
     line-height: 10px;
+    text-transform: uppercase;    
+}
+
+.item a {
+    position: absolute;
+    bottom: 10em;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.item a i {    
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 1em;
+}
+.item a i:hover {
+    background-color: #fff;
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+.red {
     color: #FF4C40;
-    text-transform: uppercase;
 }
 
 /* SERVICES */
 .services {
     margin-top: 3em;
-}
-.services .col-sm-4:hover {
-    background-color: rgba(200,200,200,0.2);
 }
 .services a {    
     color: red;
@@ -60,41 +79,56 @@ section {
     height: 250px;
 }
 
+.gray {
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+.gray h3 {
+    margin: 0;
+}
+
 /* ABOUT */
 #about {
     background-image: url(img/aboutbg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/aboutbg.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     color: #fff;    
     padding: 5em 0;
-    margin-bottom: 0;
+}
+#about .text-left {
+    text-align: justify;
 }
 
 /* LINE */
 #line {
-    background: #ffd800;
+    background: #FF4C40;
     margin-top: 0;
     padding: 5em 0;
+}
+#line input {
+    color: #FF4C40;
+}
+#line .btn {
+    border: 2px solid #fff;
 }
 
 /* WORK */
 #work img {
     width: 100%;
 }
+#work .col-sm-4 {
+    margin: 1em auto 3em;
+}
 
 /* BLOG */
 #blog {
-    background-image: url(img/blog.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/blog.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     padding: 5em 0;
     color: #fff;
-}
-
-/* FOOTER */
-footer {
-    background-color: #ffd800;
-    padding: 3em 0;
 }
