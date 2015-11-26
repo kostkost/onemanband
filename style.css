@@ -18,14 +18,29 @@ section {
     padding: 0;
 }
 
-.carousel-inner img {
-    height: 300px;
+/* HERO */
+.hero .item {
+    height: 100vh;
+    background-image: url(img/home.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
 }
-.carousel-caption {
-    z-index: 1;
+.hero .item span {
+    position: absolute;
     top: 10em;
-    height: 300px;
-    background-color: rgba(0,0,0,0.5);
+    left: 5em;
+    width: 70%;
+    color: #fff;
+}
+.hero .item h4 {
+    text-align: justify;
+    background-color: rgba(0,0,0,0.6);
+}
+.red {
+    line-height: 10px;
+    color: #FF4C40;
+    text-transform: uppercase;
 }
 
 /* SERVICES */
