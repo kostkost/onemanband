@@ -1,0 +1,85 @@
+/* #ffd800 */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin: 3em auto; 
+}
+
+
+.navbar {
+    z-index: 10;
+}
+.navbar-brand img {
+    height: 3em;
+}
+.navbar-brand {
+    padding: 0;
+}
+
+.carousel-inner img {
+    height: 300px;
+}
+.carousel-caption {
+    z-index: 1;
+    top: 10em;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* SERVICES */
+.services {
+    margin-top: 3em;
+}
+.services .col-sm-4:hover {
+    background-color: rgba(200,200,200,0.2);
+}
+.services a {    
+    color: red;
+}
+.services a:hover {    
+    text-decoration: none;
+}
+.services .col-sm-4 {
+    height: 250px;
+}
+
+/* ABOUT */
+#about {
+    background-image: url(img/aboutbg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;    
+    padding: 5em 0;
+    margin-bottom: 0;
+}
+
+/* LINE */
+#line {
+    background: #ffd800;
+    margin-top: 0;
+    padding: 5em 0;
+}
+
+/* WORK */
+#work img {
+    width: 100%;
+}
+
+/* BLOG */
+#blog {
+    background-image: url(img/blog.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5em 0;
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffd800;
+    padding: 3em 0;
+}
