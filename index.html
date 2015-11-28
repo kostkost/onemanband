@@ -9,6 +9,9 @@
 	<link href="assets/css/get-shit-done.css" rel="stylesheet" />  
     <link href="assets/css/demo.css" rel="stylesheet" /> 
     <link href="assets/css/animate.css" rel="stylesheet" /> 
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <!--     Font Awesome     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -233,10 +236,10 @@
         <div class="container text-center">
             <h1>We Bring Something Different to the Table</h1>
             <p class="lead">When you think of marketing, you probably think of public relations and advertising. You might think of television commercials, billboards, and magazine ads. The thing is, though, in today’s business world those old marketing and advertising strategies aren’t enough. In addition to a gorgeous logo and appropriate branding for your business, you also need an effective online presence – including attractive website design, active social media pages, and targeted digital advertising campaigns that work.</p>
-            <div class="col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
                 <img src="img/about.jpg" width="100%">
             </div>
-            <div class="col-sm-6 text-left wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
+            <div class="col-sm-6 text-left wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
                 <p>At One Man Band Digital, we wear a lot of hats to bring your branding, marketing, and advertising dreams to life. As a team of young professionals, we have the experience you need to create effective strategies for your business, but we also have the fresh perspective and modern approach to marketing and consulting to give you a leg up on the competition. </p>
                 <p>When it comes to creating and managing marketing strategies with the most value for money possible, we do it all. We’re your One Man Band, and we’re here to help bring your business into the future. </p>
                 <p>To learn more about our services and our unique approach to branding, marketing, and advertising, call us today at [phone number] or send us an email at [address]@OneManBand.Digital. We can’t wait to show you what we can do for you!  </p>
@@ -261,16 +264,28 @@
             <h1 class="wow zoomInDown" data-wow-delay="0.5s">Seeing Is Believing</h1>
             <p class="lead">We could go on and on about our services, tools, and resources. We could bore you to tears talking about why we’re the best and why you should choose us. But at One Man Band Digital, we believe that seeing is believing. That’s why we’ve compiled a gallery of samples of our work. Here you can browse through some of the logos and branding, website design, digital advertising, and email marketing campaigns that we’ve created for our clients. </p>
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="img/service5.jpg">
+                <div class="works">
+                    <div class="item">
+                        <h3><span>project name</span></h3>
+                        <img src="img/service5.jpg">
+                    </div>
+                    <div class="item">
+                        <h3><span>simple title</span></h3>
+                        <img src="img/service4.jpg">
+                    </div>
+                    <div class="item">
+                        <h3><span>something</span></h3>
+                        <img src="img/service3.jpg">
+                    </div>
+                    <div class="item">
+                        <h3><span>some name</span></h3>
+                        <img src="img/service2.jpg">
+                    </div>
+                    <div class="item">
+                        <h3><span>title</span></h3>
+                        <img src="img/service1.jpg">
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="img/service5.jpg">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/service5.jpg">
-                </div>
-                
             </div>
             <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">See something you like? Have questions about our services and what we can do for your business? Call us at One Man Band Digital today at [phone number], or you can email us at [address]@OneManBand.digital. </p>
         </div>
@@ -283,7 +298,7 @@
         </div>
     </section>
     
-    <section id="contacts" class="margin3">
+    <section id="contacts" class="margin3 gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 wow flipInY" data-wow-delay="0.5s">
@@ -319,16 +334,15 @@
                       </div>
                     </form>                    
                     <ul class="list-unstyled list-inline">
-                        <li>Phone: </li>
-                        <li>Email: </li>
-                        <li>Fax: </li>
-                        <li>Mailing Address: </li>
+                        <li>Phone: (123) 4567890</li>
+                        <li>Fax: (123) 4567890</li>
+                        <li>Email: some@mail.com</li>
+                        <li>Mailing Address: anothe@mail.com</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>   
-    <section class="margin3"></section>
 </body>
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -349,6 +363,19 @@
                 $.scrollport( 650 );
             });             
         });        
+    </script>
+    
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.works').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              autoplay: true,
+              dots: true
+          });
+        });
     </script>
     
     	<script src="assets/js/gsdk-checkbox.js"></script>
