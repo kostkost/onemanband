@@ -1,6 +1,11 @@
 /* #ffd800 */ 
 /* #FF4C40 */
 
+/*
+    background-color: #34ACDC;
+    background-color: rgba(52, 172, 220, 0.98);
+*/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -23,7 +28,7 @@ body {
 /* HERO */
 .hero .item {
     height: 100vh;
-    background-image: url(img/home.jpg);
+    background-image: url(img/homeblue.jpg);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -46,7 +51,7 @@ body {
 
 .item a {
     position: absolute;
-    bottom: 5em;
+    bottom: 10em;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -61,16 +66,20 @@ body {
     -webkit-transition: background-color 1s; /* Safari */
     transition: background-color 1s;
 }
+.item .btn {
+    padding: 1em;
+    background-color: rgba(52, 172, 220, 0.68);
+}
 .red {
-    color: #FF4C40;
+    color: #34ACDC;
 }
 
 /* SERVICES */
 .services {
     margin-top: 3em;
 }
-.services a {    
-    color: red;
+.services a {  
+    color: #34ACDC;
 }
 .services a:hover {    
     text-decoration: none;
@@ -104,12 +113,12 @@ body {
 
 /* LINE */
 #line {
-    background: #FF4C40;
+    background: #34ACDC;
     margin-top: 0;
     padding: 5em 0;
 }
 #line input {
-    color: #FF4C40;
+    color: #34ACDC;
 }
 #line .btn {
     border: 2px solid #fff;
@@ -145,8 +154,9 @@ body {
     -o-transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -webkit-transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    background-color: rgba(255, 76, 64,0.9);
+    background-color: rgba(52, 172, 220, 0.9);
 }
+
 .works .item:hover h3 {
     opacity: 1;
 }
@@ -179,5 +189,6 @@ body {
 }
 
 /* CONTACTS */
-#contacts {
+#contacts { 
+    
 }

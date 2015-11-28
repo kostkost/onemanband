@@ -27,7 +27,7 @@
     <!--    
         navbar-default can be changed with navbar-ct-blue navbar-ct-azzure navbar-ct-red navbar-ct-green navbar-ct-orange  
         -->
-        <nav class="navbar navbar-ct-red navbar-transparent navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
           
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,19 +43,9 @@
         
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Services <b class="caret"></b></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Marketing Strategy</a></li>
-                        <li><a href="#">Digital Advertising</a></li>
-                        <li><a href="#">Social Media Marketing and Management</a></li>
-                        <li><a href="#">Logos, Branding, and Brand Strategy</a></li>
-                        <li><a href="#">Website Design</a></li>
-                        <li><a href="#">Business Strategy</a></li>
-                      </ul>
-                </li>
+              <ul class="nav navbar-nav navbar-right link">
+                <li class="active"><a href="#hero">Home</a></li>
+                <li><a href="#services" class="dropdown-toggle" data-toggle="dropdown">Our Services</a></li>
                 <li><a href="#about" >About Us</a></li>
                 <li><a href="#work" >Our Work</a></li>
                 <li><a href="#blog" >Blog</a></li>
@@ -66,15 +56,16 @@
         </nav>
      <div class="blurred-container">
          
-         <div class="hero">
+         <div class="hero" id="hero">
             <div class="item">
                 <span>
                     <h2 class="wow bounceInDown">Welcome, and thanks for stopping by</h2>
                     <h1 class="red wow bounceInLeft" data-wow-delay="0.4s">ONE MAN BAND - DIGITAL CONCEPTS</h1>
                     <h4 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">We’re a different kind of digital marketing agency. From logo creation and branding to social media and marketing strategy, we offer a wide range of incredible solutions to your marketing and advertising needs.</h4>
                 </span>
-                <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">
-                    <a id="link"><i class="fa fa-chevron-down fa-2x red"></i></a>
+                
+                <div class="link">
+                    <a href="#contacts" class="wow fadeIn link btn btn-primary btn-fill" data-wow-duration="2s" data-wow-delay="2s">Let's make some music</a>
                 </div>
             </div>
          </div>
@@ -104,7 +95,7 @@
         <h4 class="wow bounceInLeft">That’s why, at One Man Band Digital, we offer a complex matrix of services, including but not limited to: </h4>      
         
         
-<div class="services row">
+<div class="services row links">
     <div class="col-xs-6 col-sm-4 col-md-2 text-center wow bounceInUp" data-wow-delay="0s">
         <a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab">
             <i class="fa fa-bolt fa-3x"></i>
@@ -329,15 +320,23 @@
                       </div>
                       <div class="form-group wow flipInX" data-wow-delay="0.8s">
                         <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger btn-block">Send</button>
+                          <button type="submit" class="btn btn-primary btn-block">Send</button>
                         </div>
                       </div>
-                    </form>                    
-                    <ul class="list-unstyled list-inline">
-                        <li>Phone: (123) 4567890</li>
-                        <li>Fax: (123) 4567890</li>
-                        <li>Email: some@mail.com</li>
-                        <li>Mailing Address: anothe@mail.com</li>
+                    </form>    
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 wow fadeIn" data-wow-delay="1.5s">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li><i class="fa fa-phone"></i> Phone: <a href="">(123) 4567890</a></li>
+                        <li><i class="fa fa-fax"></i> Fax: (123) 4567890</li>
+                        <li><i class="fa fa-envelope"></i> Email: <a href="">some@mail.com</a></li>
+                        <li><i class="fa fa-paper-plane"></i> Mailing Address:  <a href="mailto:contact@onemanband.digital">contact@onemanband.digital</a></li>
+                        <li><i class="fa fa-facebook"></i> <a href="">facebook</a></li>
+                        <li><i class="fa fa-twitter"></i> <a href="">twitter</a></li>
+                        <li><i class="fa fa-instagram"></i> <a href="">instagram</a></li>
                     </ul>
                 </div>
             </div>
@@ -356,14 +355,28 @@
         new WOW().init();
     </script>
     
-    <script src="https://cdn.rawgit.com/iserdmi/scrollport-js/1.0.4/dist/scrollport.min.js"></script>
     <script>
-        $('document').ready(function(){
-            $('#link').click(function(){
-                $.scrollport( 650 );
-            });             
+        $(document).ready(function() {
+            $('.link a[href^="#"]').click(function(){
+                var el = $(this).attr('href');
+                $('body').animate({
+                    scrollTop: $(el).offset().top-40}, 2000);
+                return false; 
+            });
         });        
+        $(document).ready(function() {
+            $('.links a[href^="#"]').click(function(){
+                var els = $(this).attr('href');
+                setTimeout(function(){
+                    $('body').animate({
+                        scrollTop: $(els).offset().top-300}, 2000);
+                    return false; 
+                }, 500);
+            });              
+        });
     </script>
+    
+
     
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
@@ -377,7 +390,9 @@
           });
         });
     </script>
+
     
+
     	<script src="assets/js/gsdk-checkbox.js"></script>
 	<script src="assets/js/gsdk-radio.js"></script>
 <!--	<script src="assets/js/gsdk-bootstrapswitch.js"></script>-->
