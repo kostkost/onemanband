@@ -44,3 +44,15 @@ $(document).ready(function() {
         }, 500);
     });              
 });
+
+
+			var effects = document.querySelectorAll('.effects')[0];
+
+			effects.addEventListener('click', function(e) {
+
+				if (e.target.className.indexOf('hvr') > -1) {
+					e.preventDefault();
+					e.target.blur();
+
+				}
+			});
