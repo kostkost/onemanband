@@ -6,9 +6,9 @@
     <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
-	<link href="assets/css/get-shit-done.css" rel="stylesheet" />  
-    <link href="assets/css/demo.css" rel="stylesheet" /> 
-    <link href="assets/css/animate.css" rel="stylesheet" /> 
+	<link href="css/get-shit-done.css" rel="stylesheet" />  
+    <link href="css/demo.css" rel="stylesheet" /> 
+    <link href="css/animate.css" rel="stylesheet" /> 
     
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -17,7 +17,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
   
 </head>
 
@@ -29,16 +29,16 @@
         -->
         <nav class="navbar navbar-ct-blue navbar-transparent navbar-fixed-top" role="navigation">
           
-          <div class="container">
+          <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header link">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/logo.png">ONEMANBAND</a>
+              <a class="navbar-brand" href="#hero"><img src="img/logo.png">ONEMANBAND</a>
             </div>
         
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -344,60 +344,18 @@
     </section>   
 </body>
 
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery/jquery-migrate-1.2.1.min.js"></script>
 	<script src="bootstrap3/js/bootstrap.js" type="text/javascript"></script>
-
-	<script src="assets/js/wow.js"></script>
+	<script src="js/wow.js"></script>
     <script>
         new WOW().init();
-    </script>
-    
-    <script>
-        $(document).ready(function() {
-            $('.link a[href^="#"]').click(function(){
-                var el = $(this).attr('href');
-                $('body').animate({
-                    scrollTop: $(el).offset().top-40}, 2000);
-                return false; 
-            });
-        });        
-        $(document).ready(function() {
-            $('.links a[href^="#"]').click(function(){
-                var els = $(this).attr('href');
-                setTimeout(function(){
-                    $('body').animate({
-                        scrollTop: $(els).offset().top-300}, 2000);
-                    return false; 
-                }, 500);
-            });              
-        });
-    </script>
-    
-
-    
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-          $('.works').slick({
-              infinite: true,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              autoplay: true,
-              dots: true
-          });
-        });
-    </script>
-
-    
-
-    	<script src="assets/js/gsdk-checkbox.js"></script>
-	<script src="assets/js/gsdk-radio.js"></script>
+    </script>    
+    <script type="text/javascript" src="slick/slick.min.js"></script>   
+    <script src="js/gsdk-checkbox.js"></script>
+	<script src="js/gsdk-radio.js"></script>
 <!--	<script src="assets/js/gsdk-bootstrapswitch.js"></script>-->
-	<script src="assets/js/get-shit-done.js"></script>
-    
-    <script src="assets/js/custom.js"></script>
+	<script src="js/get-shit-done.js"></script>    
+    <script src="js/custom.js"></script>
 
 </html>
