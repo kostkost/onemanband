@@ -91,6 +91,7 @@ body {
         height: 100%;
         background-position: center center;
         background-size: 100% 100%;
+        background-position: bottom 0 right 0;
     }
     .hero .item span {
         position: relative;
