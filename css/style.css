@@ -25,11 +25,20 @@ body {
     padding: 0;
 }
 
+.switch {
+    margin-right: 20px;
+}
+#navbar-full .navbar {
+    border-radius: 0 !important;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
 /* HERO */
 .hero .item {
     min-height: 600px;
     height: 100vh;
-    background-image: url(../img/homeblue.jpg);
+    background-image: url(../img/homeblue.png);
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -81,7 +90,7 @@ body {
         min-height: 100vh;
         height: 100%;
         background-position: center center;
-        background-size: auto;
+        background-size: 100% 100%;
     }
     .hero .item span {
         position: relative;
