@@ -103,6 +103,10 @@ body {
     }
     .hero .item h1 {        
         background-color: rgba(0,0,0,0.6);
+        font-size: 28px;
+    }
+    .hero .item h2 {        
+        font-size: 28px;
     }
     .item .btn {
         bottom: 0;
